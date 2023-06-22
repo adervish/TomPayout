@@ -20,8 +20,8 @@ with st.form("my_form"):
         low_payout = math.ceil(r * pot/5.) * 5
         payouts = [low_payout, pot - low_payout]
         if p2 == min(p): payouts = list(reversed(payouts))
-        p1_dollars = locale.currency(payouts[0], grouping=True)
-        p2_dollars = locale.currency(payouts[1], grouping=True)
-        st.write(f"P1: {p1_dollars}")
-        st.write(f"P2: {p2_dollars}")
+        #p1_dollars = locale.currency(payouts[0], grouping=True)
+        #p2_dollars = locale.currency(payouts[1], grouping=True)
+        st.write(f"P1: {p1}")
+        st.write(f"P2: {p2}")
     
