@@ -22,6 +22,6 @@ with st.form("my_form"):
         if p2 == min(p): payouts = list(reversed(payouts))
         #p1_dollars = locale.currency(payouts[0], grouping=True)
         #p2_dollars = locale.currency(payouts[1], grouping=True)
-        st.write(f"P1: {p1}")
-        st.write(f"P2: {p2}")
+        st.write(f"P1: {payouts[0]}")
+        st.write(f"P2: {payouts[1]}")
     
